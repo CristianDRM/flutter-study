@@ -1,6 +1,6 @@
 # exercise
 
-This project contains experiments of Flutter.
+This project contains Flutter experiments.
 
 All experiment are based on the following courses:
 
