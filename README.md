@@ -1,8 +1,7 @@
 # exercise
 
-A new Flutter project.
+This project contains experiments of Flutter.
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+All experiment are based on the following courses:
+https://www.udemy.com/flutter-dart-the-complete-flutter-app-development-course/
+https://www.udemy.com/dart-and-flutter-the-complete-developers-guide/
