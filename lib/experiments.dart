@@ -6,9 +6,10 @@ import 'package:exercise/screens/weather/weather_screen.dart';
 import 'package:exercise/screens/bmi/bmi.dart';
 import 'package:exercise/screens/planets/planets.dart';
 import 'package:exercise/screens/login/login.dart';
+import 'package:exercise/screens/login_with_bloc/login_with_bloc.dart';
 
 enum _ScreenType {
-  login, planets, bmi, network, quake, weather, loginWithForm
+  login, planets, bmi, network, quake, weather, loginWithForm, loginWithBloc
 }
 
 class Experiments extends StatelessWidget {
@@ -31,6 +32,11 @@ class Experiments extends StatelessWidget {
               title: "login with form",
               description: "login with forma(validation and submit)",
               didTap: () => didTapInScreen(context, screen: _ScreenType.loginWithForm)),
+          Container(height: 1.0, color: Colors.pinkAccent),
+          _ScreenItem(
+              title: "Login with Bloc",
+              description: "A login build with Bloc pattern",
+              didTap: () => didTapInScreen(context, screen: _ScreenType.loginWithBloc)),
           Container(height: 1.0, color: Colors.pinkAccent),
           _ScreenItem(
               title: "BMI",
@@ -57,7 +63,7 @@ class Experiments extends StatelessWidget {
               title: "Weather",
               description: "A weather app",
               didTap: () => didTapInScreen(context, screen: _ScreenType.weather)),
-          Container(height: 1.0, color: Colors.pinkAccent),
+          Container(height: 1.0, color: Colors.pinkAccent)
         ],
       ),
     );
@@ -72,6 +78,7 @@ class Experiments extends StatelessWidget {
       case _ScreenType.quake: navigateTo(screen: QuakeScreen(), context: context); break;
       case _ScreenType.weather: navigateTo(screen: WeatherScreen(), context: context); break;
       case _ScreenType.loginWithForm: navigateTo(screen: LoginWithForm(), context: context); break;
+      case _ScreenType.loginWithBloc: navigateTo(screen: LoginWithBloc(), context: context); break;
       default: break;
     }
   }

@@ -14,10 +14,9 @@ class _LoginWithFormState extends State<LoginWithForm> with LoginValidator {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Login with form")),
+        appBar: AppBar(title: Text("Login with forms")),
         body: Container(
             padding: EdgeInsets.all(20.0),
-            color: Colors.blueGrey,
             child: Form(
               key: formKey,
               child: Column(
