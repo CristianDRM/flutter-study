@@ -3,7 +3,6 @@ import 'package:exercise/screens/login_with_bloc/login_bloc.dart';
 import 'package:flutter/material.dart';
 
 class LoginWithBloc extends StatefulWidget {
-
   @override
   State<StatefulWidget> createState() => _LoginWithBlocState();
 }

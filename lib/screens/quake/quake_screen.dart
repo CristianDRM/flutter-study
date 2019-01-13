@@ -7,9 +7,7 @@ class QuakeScreen extends StatefulWidget {
   final QuakeInteractorType interactor;
 
   @override
-  State<StatefulWidget> createState() {
-    return _QuakeScreenState(interactor: interactor);
-  }
+  State<StatefulWidget> createState() => _QuakeScreenState(interactor: interactor);
 }
 
 class _QuakeScreenState extends State<QuakeScreen> {

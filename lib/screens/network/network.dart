@@ -1,21 +1,17 @@
 import 'package:exercise/screens/network/post.dart';
-import 'package:exercise/screens/network/post_repository.dart';
+import 'package:exercise/screens/network/post_connectable.dart';
 import 'package:flutter/material.dart';
 
 class Network extends StatefulWidget {
   Network({Key key, this.connector = const PostConnector()}) : super(key: key);
-
   final PostConnectorType connector;
 
   @override
-  State<StatefulWidget> createState() {
-    return _NetworkState(connector: connector);
-  }
+  State<StatefulWidget> createState() => _NetworkState(connector: connector);
 }
 
 class _NetworkState extends State<Network> {
   _NetworkState({this.connector});
-
   final PostConnectorType connector;
 
   @override

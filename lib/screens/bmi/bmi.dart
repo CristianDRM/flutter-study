@@ -2,16 +2,14 @@ import 'package:flutter/material.dart';
 
 class BMI extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _BMIState();
-  }
+  State<StatefulWidget> createState() => _BMIState();
 }
 
 class _BMIState extends State<BMI> {
 
-  final TextEditingController ageController = new TextEditingController();
-  final TextEditingController heightController = new TextEditingController();
-  final TextEditingController weightController = new TextEditingController();
+  final ageController = new TextEditingController();
+  final heightController = new TextEditingController();
+  final weightController = new TextEditingController();
 
   String bmiResult = "";
   String bmiAnalysis = "";

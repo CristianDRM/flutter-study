@@ -1,33 +1,20 @@
+import 'package:exercise/screens/planets/planet.dart';
 import 'package:exercise/shared/radio_group.dart';
 import 'package:flutter/material.dart';
 
 class Planets extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _PlanetsState();
-  }
-}
-
-class Planet extends RadioItem {
-  Planet({this.name, this.gravity});
-  String name;
-  double gravity;
-
-  String label() {
-    return name;
-  }
+  State<StatefulWidget> createState() => _PlanetsState();
 }
 
 class _PlanetsState extends State<Planets> {
-
   Planet currentPlanet;
-  final TextEditingController weightController = new TextEditingController();
-  final List<Planet> planets = [
+  final weightController = new TextEditingController();
+  final planets = [
     Planet(name: "Pluto", gravity: 20.0),
     Planet(name: "Mars", gravity: 10.0),
     Planet(name: "Venus", gravity: 15.0)
   ];
-
   String result = "Please enter weight";
 
   @override
